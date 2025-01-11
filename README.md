@@ -1,2 +1,3 @@
-# node-typescript-template
-A GitHub template repository used to create Node.js modules written in TypeScript
+# string-utils
+
+Operations on strings that handle null and undefined
