@@ -3,6 +3,8 @@ import * as path from "path";
 import { describe, it } from "@jest/globals";
 const nunjucks = require("nunjucks");
 
+// You can delete this directory (test/delete-me) after you have generated an appropriate package.json.
+// You can also uninstall nunjucks if you don't need it elsewhere:  `npm uninstall nunjucks`.
 describe("Nunjucks Utility", () => {
 	const context = {
 		author: "Michael Iaria",
@@ -13,8 +15,6 @@ describe("Nunjucks Utility", () => {
 		version: "1.0.0",
 	};
 
-	// You can delete this directory (test/nunjucks) after you have generated an appropriate package.json.
-	// You can also uninstall nunjucks if you don't need it elsewhere:  `npm uninstall nunjucks`.
 	it.skip("Render package.json", () => {
 		const rendered = nunjucks.render(path.join(__dirname, "package.json.njk"), context);
 		fs.writeFileSync(path.join(__dirname, "..", "..", "package.json"), rendered);
