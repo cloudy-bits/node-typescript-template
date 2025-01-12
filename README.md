@@ -1,3 +1,3 @@
-# string-utils
+# node-typescript-template
 
-Operations on strings that handle null and undefined
+A GitHub template repository used to create Node.js modules written in TypeScript
