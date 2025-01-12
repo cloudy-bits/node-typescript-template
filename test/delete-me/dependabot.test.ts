@@ -14,6 +14,8 @@ describe("Dependabot Utility", () => {
 		packagesTemplate.devDependencies = packages.devDependencies;
 
 		fs.writeFileSync(path.join(__dirname, "package.json.njk"), JSON.stringify(packagesTemplate));
-		await exec(`npx prettier --parser json --write ${path.join(__dirname, "package.json.njk")}`);
+		await exec(
+			`npx prettier --config ${path.join(__dirname, "..", "..", ".prettierrc.json")} --parser json --write ${path.join(__dirname, "package.json.njk")}`,
+		);
 	});
 });
