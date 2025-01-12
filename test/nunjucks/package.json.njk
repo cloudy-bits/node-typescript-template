@@ -1,7 +1,7 @@
 {
-	"name": "node-typescript-template",
-	"version": "1.0.0",
-	"description": "A GitHub template repository used to create Node.js modules written in TypeScript",
+	"name": "{{ packageName }}",
+	"version": "{{ version }}",
+	"description": "{{ description }}",
 	"scripts": {
 		"build": "tsc",
 		"clean": "tsc --build --clean",
@@ -14,10 +14,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/cloudy-bits/node-typescript-template.git"
+		"url": "{{ repositoryUrl }}"
 	},
-	"author": "Michael Iaria",
-	"license": "MIT",
+	"author": "{{ author }}",
+	"license": "{{ license }}",
 	"devDependencies": {
 		"@eslint/js": "^9.18.0",
 		"@jest/globals": "^29.7.0",
